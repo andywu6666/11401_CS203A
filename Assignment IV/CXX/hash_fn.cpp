@@ -9,18 +9,21 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.hpp
+    - 2025/11/19: Change Developer and implement my own hash function
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: Chieh-En Wu <s1133317@mail.yzu.edu.tw>
  */
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // basic division method
+    
+    return ((key % m) + m) % m;  
 }
 
 int myHashString(const std::string& str, int m) {
-    unsigned long hash = 0;
-    // TODO: replace with your own design
-    return static_cast<int>(hash % m);  // basic division method
+    unsigned long hash_val = 0;
+    for (char c : str) {
+        hash_val = hash_val * 31 + c;
+    }
+    return static_cast<int>(hash_val % m);  // basic division method
 }

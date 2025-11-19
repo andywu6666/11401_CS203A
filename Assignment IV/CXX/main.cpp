@@ -10,8 +10,9 @@
 
    Development History:
     - 2025/11/11: Initial implementation
-
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+    - 2025/11/19: Change Developer and implement my own hash function
+    
+   Developer: Chieh-En Wu <s1133317@mail.yzu.edu.tw>
  */
 
 #include <iostream>
