@@ -1,15 +1,14 @@
-/* 
+/*
    ========================================
-   Hash Function Observation (C++ Version)
+   hash_fn.hpp — declare your hash functions
    ========================================
-   
+
    Description:
-   This program tests and displays the output of hash functions for integer
-   and string keys using different table sizes. It utilizes the hash functions
-   defined in "hash_fn.cpp".
+    This file contains the hash functions for integer and string keys.
 
    Development History:
-    - 2025/11/19: Initial implementation
+    - 2025/11/17: Initial implementation
+    - 2025/11/19: Change Developer
 
    Developer: Chieh-En Wu <s1133317@mail.yzu.edu.tw>
  */
