@@ -102,26 +102,120 @@ String Keys
   ```
   === Hash Function Observation (C Version) ===
 
-  === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      1
-  22      2
-  ...
+=== Table Size m = 10 ===
+Key     Index
+-----------------
+21      1
+22      2
+23      3
+24      4
+25      5
+26      6
+27      7
+28      8
+29      9
+30      0
+51      1
+52      2
+53      3
+54      4
+55      5
+56      6
+57      7
+58      8
+59      9
+60      0
 
-  === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      10
-  22      0
-  ...
+=== Table Size m = 11 ===
+Key     Index
+-----------------
+21      10
+22      0
+23      1
+24      2
+25      3
+26      4
+27      5
+28      6
+29      7
+30      8
+51      7
+52      8
+53      9
+54      10
+55      0
+56      1
+57      2
+58      3
+59      4
+60      5
 
-  === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      21
-  22      22
-  ...
+=== Table Size m = 37 ===
+Key     Index
+-----------------
+21      21
+22      22
+23      23
+24      24
+25      25
+26      26
+27      27
+28      28
+29      29
+30      30
+51      14
+52      15
+53      16
+54      17
+55      18
+56      19
+57      20
+58      21
+59      22
+60      23
+
+=== String Hash (m = 10) ===
+Key     Index
+-----------------
+cat     2
+dog     4
+bat     1
+cow     9
+ant     3
+owl     8
+bee     0
+hen     5
+pig     0
+fox     3
+
+=== String Hash (m = 11) ===
+Key     Index
+-----------------
+cat     10
+dog     6
+bat     6
+cow     7
+ant     9
+owl     6
+bee     5
+hen     5
+pig     0
+fox     9
+
+=== String Hash (m = 37) ===
+Key     Index
+-----------------
+cat     27
+dog     3
+bat     28
+cow     20
+ant     25
+owl     23
+bee     26
+hen     29
+pig     27
+fox     18
+
 
   === Hash Function Observation (C++ Version) ===
 
@@ -239,22 +333,33 @@ hen     29
 pig     27
 fox     18
 
-  <!-- ```
+  ```
 
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
-- Example output for integers:
-  ```
-  Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-  Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
-  ```
-- Example output for strings:
-  ```
-  Hash table (m=10): ["cat", "dog", "bat", "cow", "ant", ...]
-  Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
-  Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
-  ```
-- Observations: Outputs align with the analysis, showing better distribution with prime table sizes. -->
+- Observations:
+ C vs. C++ Hash Function Implementation
+
+-Integer Hash
+C version: int myHashInt(int key, int m)
+C++ version: int myHashInt(int key, int m)
+
+They are exactly the same.
+
+-String Hash
+C version: int myHashString(const char *str, int m)
+C++ version: int myHashString(const std::string& str, int m)
+
+C uses C-string (char*)
+C++ uses std::string
+
+-Character iteration in string hash:
+C uses while
+C++ uses range for
+
+-Functionality:
+C requires using distinct function names for each type.
+In C, you must use char* and explicitly handle string memory and null-termination.
+C++ supports function overloading (the same function name for different argument types). 
+C++ can directly utilize std::string for string management.
 
 ## Analysis
 -Prime vs Non-prime Table Size:
@@ -273,4 +378,4 @@ Consistently choose prime table size and robust hash functions (e.g., polynomial
 
 3.For robustness, the polynomial method for strings (with carefully chosen constants) and division method for integers (~with prime m~) are recommended.
 
-4.To further improve hash table efficiency, maintaining a load factor below 0.7 is advised. This may require dynamic resizing or initial bucket count planning based on expected data volume.
+4.To further improve hash table efficiency, maintaining a load factor below 0.7 is advised(as the Professor Yu-Feng Huang said in class). This may require dynamic resizing or initial bucket count planning based on expected data volume.

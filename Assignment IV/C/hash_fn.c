@@ -20,7 +20,7 @@ int myHashInt(int key, int m) {
     
     return ((key % m) + m) % m;  
 }
-
+// C does not have std::string, so we use char* instead
 int myHashString(const char* str, int m) {
     unsigned long hash_val = 0;
     while (*str) {

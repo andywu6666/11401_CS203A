@@ -25,5 +25,5 @@ int myHashString(const std::string& str, int m) {
     for (char c : str) {
         hash_val = hash_val * 31 + c;
     }
-    return static_cast<int>(hash_val % m);  // basic division method
+    return static_cast<int>(hash_val % m);  
 }
