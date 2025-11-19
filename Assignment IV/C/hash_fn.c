@@ -9,19 +9,23 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.h
+    - 2025/11/19: Change Developer and implement my own hash function
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: Chieh-En Wu <s1133317@mail.yzu.edu.tw>
  */
 
 #include "hash_fn.h"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // division method example
+    
+    return ((key % m) + m) % m;  
 }
 
 int myHashString(const char* str, int m) {
-    unsigned long hash = 0;
-    // TODO: replace with your own design
-    return (int)(hash % m); // basic division method
+    unsigned long hash_val = 0;
+    while (*str) {
+        hash_val = hash_val * 31 + (unsigned char)(*str);
+        str++;
+    }
+    return (int)(hash_val % m); 
 }

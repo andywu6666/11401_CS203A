@@ -8,8 +8,9 @@
 
    Development History:
     - 2025/11/17: Initial implementation
-
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+    - 2025/11/19: Change Developer
+    
+   Developer: Chieh-En Wu <s1133317@mail.yzu.edu.tw>
  */
 #ifndef HASH_FN_H
 #define HASH_FN_H
