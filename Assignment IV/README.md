@@ -9,8 +9,8 @@ Email: s1133317@mail.yzu.edu.tw
 
 ## System Environment
 
-Windows 11 23H2
-IDE: Visual Studio Code with Git
+- System: Windows 11 23H2
+- IDE: Visual Studio Code with Git
 
 ## My Hash Function
 ### Integer Keys 
