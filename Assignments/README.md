@@ -5,8 +5,7 @@
 ---
 
 ## Assignment IV - Hash - Design your Hash Function
-* **概要** 
-## Repository Structure
+### Repository Structure
 ```
 Assignment IV
 ├── C                       # C implementation directory
@@ -26,7 +25,7 @@ Assignment IV
 ---
 
 ## Assignment V - Tree
-* **概要** 
+### Repository Structure
 ```
 Assignment V
 ├── 1133317_Assignment_V_ver.1.docx           # Initial version of implemntation  
