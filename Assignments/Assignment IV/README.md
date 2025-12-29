@@ -104,9 +104,8 @@ String Keys
 
 ### Result Snapshot
 - Example output for integers:
-  ```
-  === Hash Function Observation (C Version) ===
-
+ ```
+=== Hash Function Observation (C Version) ===
 === Table Size m = 10 ===
 Key     Index
 -----------------
@@ -337,8 +336,7 @@ bee     26
 hen     29
 pig     27
 fox     18
-
-  ```
+ ```
 
 - Observations:
  C vs. C++ Hash Function Implementation
