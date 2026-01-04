@@ -1,6 +1,17 @@
-# Data Structures - Assignments
-這個頁面存放我所有實作過的作業
+# 📁 Assignments - 作業專區
 
+這個頁面存放 CS203A 資料結構課程的所有實作作業與相關專案。
+
+## 作業列表 (Assignment List)
+
+點擊連結即可查看題目說明或進入專案資料夾：
+
+| 作業編號 | 主題 (Topic) | 內容連結 | 備註 |
+| :--- | :--- | :--- | :--- |
+| **Assignment II** | Array - Selection Sort | [📄 題目說明 (PDF)](./Assignment%20II.pdf) | |
+| **Assignment III** | Linked List - Selection Sort | [📄 題目說明 (PDF)](./Assignment%20III.pdf) | |
+| **Assignment IV** | Hash Function Design | [📂 進入專案 (README)](./Assignment%20IV/README.md) | 包含 C/C++ 實作原始碼與 Makefile |
+| **Assignment V** | Tree Implementation | [📄 作業報告 (Docx)](./Assignment%20V/1133317_Assignment_V_ver.2.docx) | 包含實作版本與反思心得 |
 
 ---
 
@@ -11,7 +22,7 @@
 
 [詳細內容](./Assignment%20III.pdf)
 
----
+
 
 ## Assignment IV - Hash - Design your Hash Function
 
@@ -34,7 +45,7 @@ Assignment IV
 └── VSCode.md               # VS Code setup instructions
 ```
 
----
+
 
 ## Assignment V - Tree
 
@@ -46,3 +57,9 @@ Assignment V
 ├── 1133317_Assignment_V_ver.1.docx           # Initial version of implemntation  
 ├── 1133317_Assignment_V_ver.2.docx           # add  Reflection on Tree Family and Performance
 ```
+
+---
+
+> [🔙 返回主頁 (Back to Home)](../README.md)
+---
+
