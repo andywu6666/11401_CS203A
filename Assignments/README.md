@@ -38,7 +38,7 @@ Assignment IV
 
 ## Assignment V - Tree
 
-[詳細內容](./Assignments/Assignment%20V/README.md)
+[詳細內容](./Assignment%20V/README.md)
 
 ### Repository Structure
 ```
