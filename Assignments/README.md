@@ -4,7 +4,19 @@
 
 ---
 
+## Assignment II - Array - Selection Sort
+[詳細內容](./Assignments/Assignment%20II.pdf)
+
+## Assignment III - Linked List - Selection Sort
+
+[詳細內容](./Assignments/Assignment%20III.pdf)
+
+---
+
 ## Assignment IV - Hash - Design your Hash Function
+
+[詳細內容](./Assignments/Assignment%20IV/README.md)
+
 ### Repository Structure
 ```
 Assignment IV
@@ -25,6 +37,9 @@ Assignment IV
 ---
 
 ## Assignment V - Tree
+
+[詳細內容](./Assignments/Assignment%20V/README.md)
+
 ### Repository Structure
 ```
 Assignment V
