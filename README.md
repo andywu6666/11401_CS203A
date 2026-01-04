@@ -27,7 +27,7 @@ This is the living document to record the things I learned from this course.
 ### 1. [📂 作業專區 (Assignments)](./Assignments/)
 > **前往作業頁面** ➜
 > 這裡包含所有程式作業的題目說明 (PDF) 與實作程式碼。
-> * (HW1 - HW5 相關內容)
+> * (HW2 - HW5 相關內容，HW1為創建Repo故不在專案裡面)
 
 ### 2. [📝 小考測驗 (Quizzes)](./Quizzes/)
 > **前往小考頁面** ➜
