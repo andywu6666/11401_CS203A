@@ -8,7 +8,7 @@
 
 | 主題 (Topic) | 檔案連結 (PDF) | 備註 |
 | :--- | :--- | :--- |
-| **Code Practice1** | [📄 Practice1.c](./Practice1.c) | |
+| **Code Pratice1** | [📄 Pratice1.c](./Pratice1.c) | |
 | **Midterm Review** | [📄 10/27 期中複習](./StudyNote_1027MidtermReview.pdf) | |
 | **Final Review** | [📄 期末複習](./StudyNote_FinalReview.pdf) | |
 | **Data Locality** | [📄 Data Locality](./StudyNote_Data%20locality.pdf) | 空間利用率 |
